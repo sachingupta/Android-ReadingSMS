@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sachingupta.android-readingSMS.MainActivity">
+
+    <LinearLayout android:id="@+id/actionButtons"
+        android:layout_width="match_parent" android:layout_weight="0"
+        android:layout_height="wrap_content">
+        <Button android:text="Inbox" android:id="@+id/btnInbox"
+            android:layout_height="wrap_content" android:layout_weight="0.5"
+            android:layout_width="match_parent"></Button>
+        <Button android:text="Sent Box" android:id="@+id/btnSentBox"
+            android:layout_height="wrap_content" android:layout_weight="0.5"
+            android:layout_width="match_parent"></Button>
+        <Button android:layout_weight="0.5" android:layout_height="wrap_content"
+            android:id="@+id/btnDraft" android:text="Draft" android:layout_width="match_parent"></Button>
+    </LinearLayout>
+    <ListView android:layout_width="match_parent"
+        android:layout_below="@id/actionButtons"
+        android:layout_weight="1" android:layout_height="match_parent"
+        android:id="@+id/messageList"></ListView>
+</RelativeLayout>
